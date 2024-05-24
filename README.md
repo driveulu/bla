@@ -1,21 +1,31 @@
 # Bla
 
-**TODO: Add description**
+In some cases Logger.info does not display in the terminal. 
 
-## Installation
+c44d62a 2024-05-24 15:08:21 Eddy de Boer (HEAD -> main) Logger working: kafka_ex disabled
+ee199f3 2024-05-24 14:28:34 Eddy de Boer Logger not working: kafka_ex enabled
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `bla` to your list of dependencies in `mix.exs`:
+Example of working:
 
-```elixir
-def deps do
-  [
-    {:bla, "~> 0.1.0"}
-  ]
-end
+```
+$ git co main
+$ rm mix.lock ; rm deps -rf ; rm _build -rf ;mix deps.get ; MIX_ENV=staging iex -S mix
+
+Interactive Elixir (1.16.2) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> Bla.hello
+
+15:12:22.018 [info] world
+:ok
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/bla>.
+Example of not working:
 
+```
+$ git co ee199f3 
+$ rm mix.lock ; rm deps -rf ; rm _build -rf ;mix deps.get ; MIX_ENV=staging iex -S mix
+
+Interactive Elixir (1.16.2) - press Ctrl+C to exit (type h() ENTER for help)
+
+iex(1)> Bla.hello
+:ok
+```
