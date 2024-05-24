@@ -15,7 +15,7 @@ defmodule Bla.MixProject do
   def application do
     [
         extra_applications: [
-          :kafka_ex,
+          # :kafka_ex,
           :lager,
           :logger,
         ],
@@ -26,7 +26,7 @@ defmodule Bla.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:kafka_ex, "~> 0.13"},
+      # {:kafka_ex, "~> 0.13"},
       {:lager, "~> 3.9", override: true},
     ]
   end
