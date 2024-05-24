@@ -2,8 +2,10 @@
 
 In some cases Logger.info does not display in the terminal. 
 
+```
 c44d62a 2024-05-24 15:08:21 Eddy de Boer (HEAD -> main) Logger working: kafka_ex disabled
 ee199f3 2024-05-24 14:28:34 Eddy de Boer Logger not working: kafka_ex enabled
+```
 
 Example of working:
 
